@@ -51,7 +51,7 @@ namespace DarkerNights
             // Set aurora illumination
             float auroraFade = GameManager.GetAuroraManager().GetNormalizedAlphaSquare();
 
-            if (!Utils.IsZero(auroraFade) && Settings.options.auroraIllumination)
+            if (Mathf.Abs(auroraFade) > 0.0001f && Settings.options.auroraIllumination)
             {
                 Color auroraColour = GameManager.GetAuroraManager().GetAuroraColour();
                 ColorHSV auroraModColor = auroraColour;
@@ -106,7 +106,11 @@ namespace DarkerNights
             uniStorm.m_MoonLight.intensity = moonInt;
             Utils.SetAmbientLight(colorHSV);
             Shader.SetGlobalColor("_Fresnelcolor", fresnelHSV);
-            weatherComponent.SetBlowingSnowColor(snowHSV);
+            try
+            {
+                weatherComponent.SetBlowingSnowColor(snowHSV);
+            }
+            catch { }
         }
     }
 
