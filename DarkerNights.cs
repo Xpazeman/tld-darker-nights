@@ -4,7 +4,8 @@ using System.Reflection;
 using System.Collections.Generic;
 using UnityEngine;
 using MelonLoader;
-using Harmony;
+using HarmonyLib;
+using Il2Cpp;
 
 namespace DarkerNights
 {
@@ -25,7 +26,7 @@ namespace DarkerNights
         public static void ApplyNightIllumination(UniStormWeatherSystem uniStorm)
         {
             TODBlendState curState = uniStorm.GetTODBlendState();
-            TODStateConfig todState = uniStorm.m_ActiveEnvironment.m_TodState;
+            TODStateData todState = uniStorm.m_ActiveEnvironment.m_TodState;
             Weather weatherComponent = GameManager.GetWeatherComponent();
 
             float dnMulti = Settings.options.darknessMultiplier;

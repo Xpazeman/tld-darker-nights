@@ -2,18 +2,18 @@
 Mod for The Long Dark to make nights darker, giving a new challenge.
 
 ## Installing the mod
-* If you haven't done so already, install MelonLoader by downloading and running [MelonLoader.Installer.exe](https://github.com/HerpDerpinstine/MelonLoader/releases/latest/download/MelonLoader.Installer.exe).
-* You'll need to download and install [ModSettings](https://github.com/zeobviouslyfakeacc/ModSettings/releases/latest/download/ModSettings.dll) by Zeo. **MOD WON'T WORK WITHOUT IT**
-* Download the latest version of DarkerNights.dll from the [releases page](https://github.com/Xpazeman/tld-darker-nights/releases/latest).
-* Move DarkerNights.dll into the Mods folder in your TLD install directory.
+* Read the [installation instructions on the modlist](https://xpazeman.com/tld-mod-list/install.html)
 
 ## Updates
+### v1.3
+* FIX: Updated to work with TLD 2.06
+
 ### v1.2
-* Added extra decimal to settings
-* Fixed version error so Lum doesn't freak out
+* FIX: Added extra decimal to settings
+* FIX: Fixed version error so Lum doesn't freak out
 
 ### v1.1
-* Fixed for TLD 1.93
+* FIX: Fixed for TLD 1.93
 
 ### v1.0
 * Initial Release
